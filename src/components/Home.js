@@ -20,10 +20,11 @@ import '../App.css';
 function Home() {
  const [check,setcheck]=useState(0);
   const navigate=useNavigate();
+  const host="https://lastmernapptitude.onrender.com";
 //checking for SBCQ
     const FullSc=async ()=>{
       try {
-           const res=await fetch('/about',{
+           const res=await fetch(`${host}/about`,{
             method:"GET",
             headers:{
                 Accept:"application/json",

@@ -15,7 +15,7 @@ function SBCT() {
     const [isRunning, setIsRunning] = useState(true);
     const [selectedButtonIndex, setSelectedButtonIndex] = useState(0);
     const [selectedButtoncolor, setSelectedButtoncolor] = useState(0);
-
+    const host="https://lastmernapptitude.onrender.com";
 
 
     useEffect(() => {
@@ -118,7 +118,7 @@ function SBCT() {
         newscore(score);
         const check="SBC";
 
-        axios.post("/api/scoring", { score, incorrect, ctype,check })
+        axios.post(`${host}/api/scoring`, { score, incorrect, ctype,check })
             .then((res) => {
                 console.log("patanahi yaar" + res);
             }).catch(err => console.log("kuch karna padega" + err))
@@ -164,7 +164,7 @@ function SBCT() {
         newscore(score);
         const check="SBC";
 
-        axios.post("/api/scoring", { score, incorrect, ctype,check })
+        axios.post(`${host}/api/scoring`, { score, incorrect, ctype,check })
             .then((res) => {
                 console.log("patanahi yaar" + res);
             }).catch(err => console.log("kuch karna padega" + err))

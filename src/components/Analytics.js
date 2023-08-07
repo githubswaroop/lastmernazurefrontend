@@ -16,6 +16,7 @@ function Analytics(props) {
     const [newincorrect, incorrect] = useState(0);
     const [newunattemted, unattemted] = useState(0);
     const location = useLocation();
+    const host="https://lastmernapptitude.onrender.com";
 
     const data = {
         labels: ['Correct', 'Incorrect', 'Not-Attempted'],
@@ -44,7 +45,7 @@ function Analytics(props) {
     const [userdata, setuserdata] = useState("");
     const Analyticspage = async () => {
         try {
-            const res = await fetch('/about', {
+            const res = await fetch(`${host}/about`, {
                 method: "GET",
                 headers: {
                     Accept: "application/json",

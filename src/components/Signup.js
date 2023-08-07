@@ -5,6 +5,7 @@ import { NavLink ,useLocation } from 'react-router-dom';
 
 function SignUp() {
 const navigate=useNavigate();
+const host="https://lastmernapptitude.onrender.com";
   const [user,setuser]=useState({
       firstname:"",lastname:"",email:"",password:""
   });
@@ -31,7 +32,7 @@ const navigate=useNavigate();
            alert("Invalid Credentials");
      }else{
         
-    const res=await fetch("/register",{
+    const res=await fetch(`${host}/register`,{
       method:"POST",
       headers:{
         "Content-Type":"application/json"

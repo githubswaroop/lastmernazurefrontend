@@ -10,6 +10,7 @@ function Navbar() {
   const [lastname,updatedlastname]=useState("");
   const [email,updatedemail]=useState("");
   const location = useLocation();
+  const host="https://lastmernapptitude.onrender.com";
   useEffect(() => {
     // Function to check if the token exists in the cookie
     function checkTokenInCookie() {
@@ -30,7 +31,7 @@ function Navbar() {
   }, [location.pathname]);
   const homepage = async () => {
     try {
-        const res = await fetch('/about', {
+        const res = await fetch(`${host}/about`, {
             method: "GET",
             headers: {
                 Accept: "application/json",

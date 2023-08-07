@@ -10,12 +10,13 @@ function Login() {
   const [email,setemail]=useState('');
   const [password,setpassword]=useState('');
   const navigate=useNavigate();
+  const host="https://lastmernapptitude.onrender.com";
 
   const loginuser=async(e)=>{
     e.preventDefault();
     
 
-    const res=await fetch("/login",{
+    const res=await fetch(`${host}/login`,{
       method:"POST",
       headers:{
         "Content-Type":"application/json"
