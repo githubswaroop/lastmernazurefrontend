@@ -1,0 +1,4 @@
+{
+    "plugin":["disable"],
+    "processor":"disable/disable"
+}
