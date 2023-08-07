@@ -8,9 +8,10 @@ function Topscorer() {
   const [scored, setscore] = useState([]);
   const [loading,setloading]=useState(false);
   const [documentArray, setDocumentArray] = useState([]);
+  const host="https://lastmernapptitude.onrender.com";
   const scoring= async ()=>{
     try {
-         const res=await fetch('/scorer',{
+         const res=await fetch(`${host}/scorer`,{
           method:"GET",
           headers:{
               Accept:"application/json",
