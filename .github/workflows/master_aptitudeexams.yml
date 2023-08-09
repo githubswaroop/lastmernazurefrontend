@@ -53,5 +53,5 @@ jobs:
         with:
           app-name: 'aptitudeexams'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_E64BC83438CB49F7A65321E2D73D7615 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_D0ED6BFC7DC647A888C7DB6302843231 }}
           package: .
