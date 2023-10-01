@@ -10,7 +10,7 @@ function Login() {
   const [email,setemail]=useState('');
   const [password,setpassword]=useState('');
   const navigate=useNavigate();
-  const host="https://lastmernapptitude.onrender.com";
+  const host="https://lastmernazurebackend.vercel.app";
 
   const loginuser=async(e)=>{
     e.preventDefault();
