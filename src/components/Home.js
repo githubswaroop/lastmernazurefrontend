@@ -20,7 +20,7 @@ import '../App.css';
 function Home() {
  const [check,setcheck]=useState(0);
   const navigate=useNavigate();
-  const host="https://lastmernapptitude.onrender.com";
+  const host="https://lastmernazurebackend.vercel.app";
 //checking for SBCQ
     const FullSc=async ()=>{
       try {
