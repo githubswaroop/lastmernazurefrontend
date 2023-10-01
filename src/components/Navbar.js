@@ -10,7 +10,7 @@ function Navbar() {
   const [lastname,updatedlastname]=useState("");
   const [email,updatedemail]=useState("");
   const location = useLocation();
-  const host="https://lastmernapptitude.onrender.com";
+  const host="https://lastmernazurebackend.vercel.app";
   useEffect(() => {
     // Function to check if the token exists in the cookie
     function checkTokenInCookie() {
