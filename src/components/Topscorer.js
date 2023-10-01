@@ -8,7 +8,7 @@ function Topscorer() {
   const [scored, setscore] = useState([]);
   const [loading,setloading]=useState(false);
   const [documentArray, setDocumentArray] = useState([]);
-  const host="https://lastmernapptitude.onrender.com";
+  const host="https://lastmernazurebackend.vercel.app";
   const scoring= async ()=>{
     try {
          const res=await fetch(`${host}/scorer`,{
