@@ -15,7 +15,7 @@ function PBCT() {
     const [isRunning, setIsRunning] = useState(true);
     const [selectedButtonIndex, setSelectedButtonIndex] = useState(0);
     const [selectedButtoncolor, setSelectedButtoncolor] = useState(0);
-    const host="https://lastmernapptitude.onrender.com";
+    const host="https://lastmernazurebackend.vercel.app";
 
 
     useEffect(() => {
