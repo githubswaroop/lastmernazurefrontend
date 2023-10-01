@@ -5,7 +5,7 @@ import { NavLink ,useLocation } from 'react-router-dom';
 
 function SignUp() {
 const navigate=useNavigate();
-const host="https://lastmernapptitude.onrender.com";
+const host="https://lastmernazurebackend.vercel.app";
   const [user,setuser]=useState({
       firstname:"",lastname:"",email:"",password:""
   });
