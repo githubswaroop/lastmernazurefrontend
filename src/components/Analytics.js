@@ -16,7 +16,7 @@ function Analytics(props) {
     const [newincorrect, incorrect] = useState(0);
     const [newunattemted, unattemted] = useState(0);
     const location = useLocation();
-    const host="https://lastmernapptitude.onrender.com";
+    const host="https://lastmernazurebackend.vercel.app";
 
     const data = {
         labels: ['Correct', 'Incorrect', 'Not-Attempted'],
