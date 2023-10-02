@@ -67,7 +67,7 @@ function Home() {
     //for PCBQ
     const FullSc2=async ()=>{
       try {
-           const res=await fetch('/about',{
+           const res=await fetch(`${host}/about`,{
             method:"GET",
             headers:{
                 Accept:"application/json",
