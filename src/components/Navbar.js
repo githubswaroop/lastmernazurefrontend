@@ -45,6 +45,7 @@ function Navbar() {
         })
 
         const data = await res.json();
+        console.log(data);
         updatedfirstname(data.firstname);
         updatedlastname(data.lastname);
         updatedemail(data.email);
