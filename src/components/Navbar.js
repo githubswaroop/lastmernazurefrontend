@@ -14,8 +14,9 @@ function Navbar() {
   useEffect(() => {
     // Function to check if the token exists in the cookie
     function checkTokenInCookie() {
-      const cookies = document.cookie.split(';');
-      const tokenCookie = cookies.find(cookie => cookie.trim().startsWith('jwt='));
+      // const cookies = document.cookie.split(';');
+      // const tokenCookie = cookies.find(cookie => cookie.trim().startsWith('jwt='));
+      const tokenCookie=localStorage.getItem("JWT");
 
       if (tokenCookie) {
         // Token exists in the cookie
@@ -29,13 +30,16 @@ function Navbar() {
 
     checkTokenInCookie();
   }, [location.pathname]);
+   const sendtoken=localStorage.getItem("JWT");
   const homepage = async () => {
     try {
         const res = await fetch(`${host}/about`, {
             method: "GET",
             headers: {
                 Accept: "application/json",
-                "Content-Type": "application/json"
+                "Content-Type": "application/json",
+               "authorization":`${sendtoken}`
+              
             },
             credentials: 'include'
         })
