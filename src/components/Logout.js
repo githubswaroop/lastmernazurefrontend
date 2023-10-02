@@ -4,6 +4,8 @@ import { Usercontext } from '../App';
 
 
 function Logout() {
+  const navigate=useNavigate();
+    const location=useLocation();
   localStorage.removeItem("JWT");
   navigate("/login");
   // const {state,dispatch}=useContext(Usercontext);
