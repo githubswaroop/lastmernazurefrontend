@@ -17,7 +17,7 @@ function Topscorer() {
           headers:{
               Accept:"application/json",
               "Content-Type":"application/json",
-              "auth-token":localStorage.getItem("JWT");
+              "auth-token":localStorage.getItem("JWT")
           },
           credentials:'include'
          })
