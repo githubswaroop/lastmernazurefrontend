@@ -35,7 +35,7 @@ function Login() {
     
       dispatch({type:"USER",payload:true});      
       const jwt=data.token;
-      console.log(jwt);
+      
       localStorage.setItem('JWT',jwt);
       window.alert("success");
 
