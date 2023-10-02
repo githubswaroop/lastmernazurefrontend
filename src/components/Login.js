@@ -33,9 +33,10 @@ function Login() {
     }else{
       //dispatch call the reducer function
     
-      dispatch({type:"USER",payload:true});
-      console.log(data.token);
-      localStorage.setItem('JWT',data.token);
+      dispatch({type:"USER",payload:true});      
+      const jwt=data.token;
+      console.log(jwt);
+      localStorage.setItem('JWT',jwt);
       window.alert("success");
 
       navigate("../");
