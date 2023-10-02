@@ -34,6 +34,7 @@ function Login() {
       //dispatch call the reducer function
     
       dispatch({type:"USER",payload:true});
+      console.log(data.token);
       window.alert("success");
 
       navigate("../");
