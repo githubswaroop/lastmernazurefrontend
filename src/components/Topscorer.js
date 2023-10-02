@@ -9,13 +9,15 @@ function Topscorer() {
   const [loading,setloading]=useState(false);
   const [documentArray, setDocumentArray] = useState([]);
   const host="https://lastmernazurebackend.vercel.app";
+  const sendtoken=localStorage.getItem("JWT");
   const scoring= async ()=>{
     try {
          const res=await fetch(`${host}/scorer`,{
           method:"GET",
           headers:{
               Accept:"application/json",
-              "Content-Type":"application/json"
+              "Content-Type":"application/json",
+              "authorization":`${sendtoken}`
           },
           credentials:'include'
          })
