@@ -32,7 +32,7 @@ function Login() {
      
     }else{
       //dispatch call the reducer function
-      localStorage.setItem("token",res.token);
+      localStorage.setItem("token",data.token);
       dispatch({type:"USER",payload:true});
       window.alert("success");
 
