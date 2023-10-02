@@ -71,7 +71,8 @@ function Home() {
             method:"GET",
             headers:{
                 Accept:"application/json",
-                "Content-Type":"application/json"
+                "Content-Type":"application/json",
+                "auth-token":localStorage.getItem("JWT"),
             },
             credentials:'include'
            })
