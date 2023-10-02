@@ -38,7 +38,7 @@ function Navbar() {
             headers: {
                 Accept: "application/json",
                 "Content-Type": "application/json"
-               // "authorization":`${sendtoken}`
+               "auth-token":localStorage.getItem("JWT"),
               
             },
             credentials: 'include'
