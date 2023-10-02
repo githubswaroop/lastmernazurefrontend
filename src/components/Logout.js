@@ -7,7 +7,7 @@ function Logout() {
   const navigate=useNavigate();
     const location=useLocation();
   localStorage.removeItem("JWT");
-   navigate("../");
+   
   // const {state,dispatch}=useContext(Usercontext);
 // const navigate=useNavigate();
 //    useEffect(()=>{
