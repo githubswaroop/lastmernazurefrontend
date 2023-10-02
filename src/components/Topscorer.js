@@ -16,8 +16,8 @@ function Topscorer() {
           method:"GET",
           headers:{
               Accept:"application/json",
-              "Content-Type":"application/json",
-              "authorization":`${sendtoken}`
+              "Content-Type":"application/json"
+              // "authorization":`${sendtoken}`
           },
           credentials:'include'
          })
