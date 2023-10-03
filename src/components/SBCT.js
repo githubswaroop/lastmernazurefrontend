@@ -118,7 +118,7 @@ function SBCT() {
         newscore(score);
         const check="SBC";
 
-          axios.post("/api/scoring", { score, incorrect, ctype,check },{
+          axios.post("${host}/api/scoring", { score, incorrect, ctype,check },{
             headers:{
                 "auth-token":localStorage.getItem("JWT")
             }
