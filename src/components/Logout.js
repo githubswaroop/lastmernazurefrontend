@@ -5,10 +5,28 @@ import { Usercontext } from '../App';
 
 function Logout() {
   
-    const location=useLocation();
-  localStorage.removeItem("JWT");
-  
-window.location.replace('/Login');
+     
+  useEffect(() => {
+    const handleBackButton = (event) => {
+        event.preventDefault(); // Prevents the default back navigation
+        navigate('/');
+        console.log('Back button pressed');
+       
+    };
+
+    window.history.pushState(null, null, window.location.pathname); // Adds an initial state to the history
+
+    window.addEventListener('popstate', handleBackButton);
+
+    return () => {
+        window.removeEventListener('popstate', handleBackButton);
+    };
+}, []);
+ 
+const navigate=useNavigate();
+localStorage.removeItem('JWT');
+
+    window.location.href = './Login';
 
   return (
    
