@@ -69,6 +69,12 @@ useEffect(() => {
 
   const Rendernav = () => {
     if (newsam) {
+      const handleLogout = () => {
+          localStorage.removeItem('JWT');
+    
+       
+        window.location.replace('/Login');
+      };
       return (
         <>
           <li className="nav-item">
@@ -86,7 +92,8 @@ useEffect(() => {
 
           <li className="nav-item">
             <NavLink style={({ isActive }) =>
-              (isActive ? { color: 'white' } : { color: 'black' })} className=" hovereffect" to="/Logout">Logout</NavLink>
+              (isActive ? { color: 'white' } : { color: 'black' })} className=" hovereffect" to="/Login"
+              onClick={handleLogout}>Logout</NavLink>
           </li>
           
           <div className='profileimg'>
