@@ -8,7 +8,7 @@ function Logout() {
     const location=useLocation();
   localStorage.removeItem("JWT");
   
-    window.location.href = './Login';
+window.location.replace('/Login');
 
   return (
    
