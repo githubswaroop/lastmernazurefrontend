@@ -8,21 +8,7 @@ function Logout() {
      
   useEffect(() => {
     const navigate=useNavigate();
-    const handleBackButton = (event) => {
-        event.preventDefault(); // Prevents the default back navigation
-        navigate('/');
-        console.log('Back button pressed');
-       
-    };
-
-    window.history.pushState(null, null, window.location.pathname); // Adds an initial state to the history
-
-    window.addEventListener('popstate', handleBackButton);
-
-    return () => {
-        window.removeEventListener('popstate', handleBackButton);
-    };
-}, []);
+    
  
 
 localStorage.removeItem('JWT');
