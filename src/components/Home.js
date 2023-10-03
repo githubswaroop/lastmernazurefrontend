@@ -37,16 +37,16 @@ function Home() {
            const data=await res.json();
           
            console.log(data.examstatus[0]);
-         ;
-         navigate('./SBCT');
+         
+         
 
-          //  if(data.examstatus[0]){
-          //   alert("you have already given this test try another");
+           if(data.examstatus[0]){
+            alert("you have already given this test try another");
             
-          //  }else{ 
-          //   alert("Dont Click on the Escape Button It will Gonna Close the Exam");
-          //   navigate('./SBCT');
-          //  }
+           }else{ 
+            alert("Dont Click on the Escape Button It will Gonna Close the Exam");
+            navigate('./SBCT');
+           }
          
           
         
@@ -79,13 +79,13 @@ function Home() {
         
            const data=await res.json();
                       
-           navigate('./PBCT');
-          //  if(data.examstatus[1]){
-          //   alert("you have already given this test try another");           
-          //  }else{ 
-          //   alert("Dont Click on the Escape Button It will Gonna Close the Exam");
-          //   navigate('./PBCT');
-          //  }
+
+           if(data.examstatus[1]){
+            alert("you have already given this test try another");           
+           }else{ 
+            alert("Dont Click on the Escape Button It will Gonna Close the Exam");
+            navigate('./PBCT');
+           }
         
        
 
