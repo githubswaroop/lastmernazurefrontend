@@ -115,7 +115,11 @@ function PBCT() {
         newscore(score);
         const check = "PBC";
 
-        axios.post(`${host}/api/scoring`, { score, incorrect, ctype, check })
+        axios.post(`${host}/api/scoring`, { score, incorrect, ctype, check },{
+            headers:{
+                "auth-token":localStorage.getItem("JWT")
+            }
+        })
             .then((res) => {
                 console.log("patanahi yaar" + res);
             }).catch(err => console.log("kuch karna padega" + err))
