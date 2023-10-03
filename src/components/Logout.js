@@ -7,6 +7,7 @@ function Logout() {
   
      
   useEffect(() => {
+    const navigate=useNavigate();
     const handleBackButton = (event) => {
         event.preventDefault(); // Prevents the default back navigation
         navigate('/');
@@ -23,7 +24,7 @@ function Logout() {
     };
 }, []);
  
-const navigate=useNavigate();
+
 localStorage.removeItem('JWT');
 
     window.location.href = './Login';
