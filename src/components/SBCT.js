@@ -118,8 +118,11 @@ function SBCT() {
         newscore(score);
         const check="SBC";
 
-        axios.post(`${host}/api/scoring`, { score, incorrect, ctype,check })
-            .then((res) => {
+          axios.post("/api/scoring", { score, incorrect, ctype,check },{
+            headers:{
+                "auth-token":localStorage.getItem("JWT")
+            }
+        }).then((res) => {
                 console.log("patanahi yaar" + res);
             }).catch(err => console.log("kuch karna padega" + err))
         
