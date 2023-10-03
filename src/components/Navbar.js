@@ -73,7 +73,7 @@ useEffect(() => {
           localStorage.removeItem('JWT');
     
        
-        
+        window.location.replace('/');
       };
       return (
         <>
