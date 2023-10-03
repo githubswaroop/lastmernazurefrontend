@@ -47,7 +47,7 @@ const host="https://lastmernazurebackend.vercel.app";
     const data =await res.json();
     console.log(data);
        
-    if(res.status === 50){
+    if(res.status === 200){
       window.alert("please login you are already sign in");
       navigate("./login");
     }
