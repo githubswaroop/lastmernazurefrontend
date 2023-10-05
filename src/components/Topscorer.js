@@ -42,12 +42,7 @@ function Topscorer() {
     
       const newArray = Array.from({ length: documents.length }, (_, index) => index + 1);
       setDocumentArray(newArray);
-      
-      //console.log(documentArray);
-      
      
-    
-     //console.log(emailArray);
       if(!res.status===200){
           const error=new Error(res.error);
           throw error;
