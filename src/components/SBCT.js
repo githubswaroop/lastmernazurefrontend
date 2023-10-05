@@ -114,7 +114,7 @@ function SBCT() {
         }
         const incorrect = (30 - (unattemted + score));
         const ctype = "SBC";
-        console.log(unattemted);
+        //console.log(unattemted);
         newscore(score);
         const check="SBC";
 
@@ -123,8 +123,8 @@ function SBCT() {
                 "auth-token":localStorage.getItem("JWT")
             }
         }).then((res) => {
-                console.log("patanahi yaar" + res);
-            }).catch(err => console.log("kuch karna padega" + err))
+                //console.log("patanahi yaar" + res);
+            }).catch(err => //console.log("kuch karna padega" + err))
         
         //code for timer
         localStorage.setItem('timeLeft', 60 * 60);
@@ -163,14 +163,14 @@ function SBCT() {
         }
         const incorrect = (30 - (unattemted + score));
         const ctype = "SBC";
-        console.log(unattemted);
+        //console.log(unattemted);
         newscore(score);
         const check="SBC";
 
         axios.post(`${host}/api/scoring`, { score, incorrect, ctype,check })
             .then((res) => {
-                console.log("patanahi yaar" + res);
-            }).catch(err => console.log("kuch karna padega" + err))
+                //console.log("patanahi yaar" + res);
+            }).catch(err => //console.log("kuch karna padega" + err))
         
         //code for timer
         localStorage.setItem('timeLeft', 60 * 60);
