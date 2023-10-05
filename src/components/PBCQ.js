@@ -37,9 +37,9 @@ function PBCQ() {
         },
         {
           id:6,
-          question: "Roshini spent Rs. 18 lakh on purchasing and altering his new Audi car. She spent 14% on speakers and woofers, 10% on metalic wheels, 4% on insurance, 8% on repainting, 14% on interiors and the remaining was the actual cost of the car. If Road Tax, charged at 20%, is included in the actual cost of the car, calculate the amount of Road Tax?",
-          options: ['1', '2', '3', '4'],
-          correctIndex: 0,
+          question: "According to a plan, a team of farmers decided to harvest 216 m³ of wheat in several days. In the first three days, the team fulfilled the daily assignment, and then it harvested 8 m³ of wheat over and above the plan everyday. Therefore, a day before the planned date, they had already harvested 232 m³ of wheat. How many cubic meters of wheat a day did the team have to cut according to the plan?",
+          options: ['12', '24', '13', '25'],
+          correctIndex: 1,
           ref: useRef(null),
         },
         {
