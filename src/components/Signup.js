@@ -48,10 +48,9 @@ const host="https://lastmernazurebackend.vercel.app";
     console.log(data);
        
     if(res.status === 200){
-      window.alert("please login you are already sign in");
-      navigate("./login");
-    }
-    if(res.status === 422 || !data ){
+      window.alert("please login you are already registered");
+      navigate("../login");
+    } else if(res.status === 422 || !data ){
       window.alert("Invalid Credentials");
      
 
