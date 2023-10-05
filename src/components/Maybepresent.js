@@ -8,7 +8,7 @@ function Maybepresent({children}) {
   
  useEffect(() => {
     // Update the document title using the browser API
-    console.log(location.pathname);
+    //console.log(location.pathname);
     if(location.pathname==='/SBCT' || location.pathname==='/PBCT'){
      setshownavbar(false);
     }else{
