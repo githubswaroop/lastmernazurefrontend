@@ -36,7 +36,7 @@ function Home() {
         
            const data=await res.json();
           
-           console.log(data.examstatus[0]);
+           //console.log(data.examstatus[0]);
          
          
 
@@ -58,7 +58,7 @@ function Home() {
         }
         
       }catch(err){
-           console.log(err);
+           //console.log(err);
            navigate("/Login");
       }
     }
@@ -83,7 +83,7 @@ function Home() {
            if(data.examstatus[1]){
             alert("you have already given this test try another");           
            }else{ 
-            alert("Dont Click on the Escape Button It will Gonna Close the Exam");
+            alert("If you try to search on other tab or exit full screen then your test get cancelled");
             navigate('./PBCT');
            }
         
@@ -95,14 +95,14 @@ function Home() {
         }
         
       }catch(err){
-           console.log(err);
+           //console.log(err);
            navigate("/Login");
       }
     }
     const ref=useRef(null);
     //using ref for scroll to test
    const gototest=()=>{
-    console.log("this");
+    //console.log("this");
     ref.current?.scrollIntoView({behavior:'smooth'});
     
    }
