@@ -22,12 +22,12 @@ const host="https://lastmernazurebackend.vercel.app";
   const senddata=async(e)=>{
     e.preventDefault();
     const {firstname,lastname,email,password}=user;
-     console.log(firstname);
-     console.log(lastname);
-     console.log(email);
+     //console.log(firstname);
+     //console.log(lastname);
+     //console.log(email);
 
      const emailvalid=/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i;
-     console.log(emailvalid.test(email));
+     //console.log(emailvalid.test(email));
      if(!emailvalid.test(email)){
            alert("Invalid Credentials");
      }else{
@@ -45,7 +45,7 @@ const host="https://lastmernazurebackend.vercel.app";
 
 
     const data =await res.json();
-    console.log(data);
+    //console.log(data);
        
     if(res.status === 200){
       window.alert("please login you are already registered");
