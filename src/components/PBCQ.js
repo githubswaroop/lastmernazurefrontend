@@ -37,9 +37,9 @@ function PBCQ() {
         },
         {
           id:6,
-          question: "According to a plan, a team of farmers decided to harvest 216 m³ of wheat in several days. In the first three days, the team fulfilled the daily assignment, and then it harvested 8 m³ of wheat over and above the plan everyday. Therefore, a day before the planned date, they had already harvested 232 m³ of wheat. How many cubic meters of wheat a day did the team have to cut according to the plan?",
-          options: ['12', '24', '13', '25'],
-          correctIndex: 1,
+          question: "A man reaches his office 30 min late, if he walks from his home at 2 km per hour and reaches 40 min early if he walks 3.5 km per hour. How far is his office from his house?",
+          options: ['49/9', '49/6', '59/6', '59/3'],
+          correctIndex: 0,
           ref: useRef(null),
         },
         {
@@ -74,14 +74,14 @@ function PBCQ() {
           id:11,
           question: "An artist got a challenge that he needs to draw a picture using some particular number of dots. If he tried to make those dots in shape of square, he was left with 46 dots in excess.When he increased the size of the square by one dot each side, he was 27 dots short of completing the square. What is the number of dots given to the artist to complete this challenge?",
           options: ['1432', '1342', '1394', '1250'],
-          correctIndex: 0,
+          correctIndex: 1,
           ref: useRef(null),
         },
         {
           id:12,
           question: "In a local city center, a well known Publisher was running a News paper business. The fixed cost of running is Rs. 60,000 per month.The cost of paper and ink is Rs. 200 per 1000 copies and printing cost is Rs. 100 per 500 copies. In the last month 40,000 copies were printed but only half of those could be sold at Rs. 4 each.There is one more source of income for the Publisher, which is advertising. If the total profit was 25% of the revenue from selling copies, what sum of money was obtained by advertising in the News paper?",
           options: ['24000', '20500', '15000', '200000'],
-          correctIndex: 0,
+          correctIndex: 3,
           ref: useRef(null),
         },
         {
@@ -106,9 +106,9 @@ function PBCQ() {
           ref: useRef(null),
         },{
           id:16,
-          question: "A street seller bought sweet corn for Rs 40 per kg. In one kg there are approximately 6 heads of corns. He sells them for Rs 10 per piece. How many corns should he sell in order to make a profit of Rs 150 in a day?",
-          options: ['48', '56', '45', '55'],
-          correctIndex: 0,
+          question: "In a 96 ltr mixture, the ratio of milk and water is 5:3. How much water should be added in the mixture so as the ratio will become 3:5?",
+          options: ['32', '64', '48', '76'],
+          correctIndex: 1,
           ref: useRef(null),
         },
         {
@@ -164,7 +164,7 @@ function PBCQ() {
           id:24,
           question: "If 12 men can do a piece of work in 40 days by working 8 hours per day. How many men will it take to do 10 times the amount of work if they work for 4 hours per day for 15 days?",
           options: ['90', '160', '640', '600'],
-          correctIndex: 0,
+          correctIndex: 2,
           ref: useRef(null),
         },
         {
