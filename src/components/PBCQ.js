@@ -67,7 +67,7 @@ function PBCQ() {
           id:10,
           question: "In a city street of 3000 people, each person reads at least one of the three News papers. The number of people who read only Hindu is 400. While the number of people who read at least two paper is 1000, the number of people who read all the three News Papers is 100.The number of people who read only Times of India as well as those who read only Economic Times are multiples of 200. If the number of people who read only Economic Times is 600, and the people who read Times of India and Economic Times but not Hindu is 200.What is possible number of people who read Hindu and Times of India but not Economic Times if the difference is need to be minimum with people who read Hindu and Economic Times but not Time of India?",
           options: ['351', '349', 'Either A and B', 'None'],
-          correctIndex: 0,
+          correctIndex: 3,
           ref: useRef(null),
         },
         {
