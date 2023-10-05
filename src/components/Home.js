@@ -44,7 +44,7 @@ function Home() {
             alert("you have already given this test try another");
             
            }else{ 
-            alert("Dont Click on the Escape Button It will Gonna Close the Exam");
+              alert("If you try to search on other tab or exit full screen then your test get submitted");
             navigate('./SBCT');
            }
          
@@ -83,7 +83,7 @@ function Home() {
            if(data.examstatus[1]){
             alert("you have already given this test try another");           
            }else{ 
-            alert("If you try to search on other tab or exit full screen then your test get cancelled");
+            alert("If you try to search on other tab or exit full screen then your test get submitted");
             navigate('./PBCT');
            }
         
