@@ -2,6 +2,7 @@ import React, { useContext, useEffect, useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.css';
 import { NavLink, useLocation } from 'react-router-dom';
 import profileimg from '../images/userprofileimg.png';
+import examlogo from '../images/aptitudelogo.png';
 
 function Navbar() {
 
@@ -143,7 +144,7 @@ useEffect(() => {
 
     <nav className="navbar navbar-expand-lg bg-body-tertiary ml-auto    col " style={{ paddingLeft: '15vw', marginleft: 'auto' }}>
       <div className="container-fluid">
-        <h1 className="navbar-brand" >Navbar</h1>
+        <img src={examlogo} alt=" " style={{width:'60px',height:'60px'}}  />
         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span className="navbar-toggler-icon"></span>
         </button>
