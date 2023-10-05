@@ -67,12 +67,39 @@ function PBCT() {
     //for full screen
     const [isFullScreen, setIsFullScreen] = useState(false);
     //disable back button funtionlity
-    useEffect(() => {
+    // useEffect(() => {
+    //     if (document.documentElement.requestFullscreen) {
+    //         document.documentElement.requestFullscreen();
+    //         setIsFullScreen(true);
+    //         setistoggled(true);
+    //     }
+    //     const backbt = () => {
+    //         window.history.pushState(null, null, window.location.href);
+    //         window.onpopstate = () => {
+    //             window.history.pushState(null, null, window.location.href);
+    //         };
+    //     };
+
+    //     backbt();
+    //     return () => {
+    //         window.onpopstate = null;
+    //     };
+    // }, []);
+     const enterFullScreen = () => {
         if (document.documentElement.requestFullscreen) {
-            document.documentElement.requestFullscreen();
-            setIsFullScreen(true);
-            setistoggled(true);
+          document.documentElement.requestFullscreen()
+            .then(() => {
+              setIsFullScreen(true);
+              setistoggled(true);
+            })
+            .catch((error) => {
+              console.error('Error entering full-screen:', error);
+            });
         }
+      };
+    
+      useEffect(() => {
+        enterFullScreen();
         const backbt = () => {
             window.history.pushState(null, null, window.location.href);
             window.onpopstate = () => {
@@ -84,7 +111,7 @@ function PBCT() {
         return () => {
             window.onpopstate = null;
         };
-    }, []);
+      }, []);
 
     //end
 
