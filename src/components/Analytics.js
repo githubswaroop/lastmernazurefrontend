@@ -71,7 +71,7 @@ function Analytics(props) {
             }
 
         } catch (err) {
-            console.log(err);
+            //console.log(err);
             
             navigate("/Login");
             
@@ -93,7 +93,7 @@ function Analytics(props) {
         const handleBackButton = (event) => {
             event.preventDefault(); // Prevents the default back navigation
             navigate('/');
-            console.log('Back button pressed');
+            //console.log('Back button pressed');
             // Add your custom code here
         };
 
@@ -115,12 +115,12 @@ function Analytics(props) {
     useEffect(() => {
        
         if(userdata.ctype=="PBC"){
-            console.log(userdata.ctype);
+            //console.log(userdata.ctype);
            
             setcheckctype(false);
             
         }else{
-            console.log(userdata.ctype);
+            //console.log(userdata.ctype);
             setcheckctype(true);
         }
        
