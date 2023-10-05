@@ -25,7 +25,7 @@ function Navbar() {
       } else {
         // Token does not exist in the cookie
         sam(0);
-        console.log('Token not found in the cookie.');
+        //console.log('Token not found in the cookie.');
       }
     }
 
@@ -46,7 +46,7 @@ function Navbar() {
         })
 
         const data = await res.json();
-        console.log(data);
+        //console.log(data);
         updatedfirstname(data.firstname);
         updatedlastname(data.lastname);
         updatedemail(data.email);
@@ -57,7 +57,7 @@ function Navbar() {
         }
 
     } catch (err) {
-        console.log(err);
+        //console.log(err);
         
        
         
