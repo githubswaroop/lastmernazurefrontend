@@ -47,7 +47,7 @@ function Topscorer() {
       
      
     
-     console.log(emailArray);
+     //console.log(emailArray);
       if(!res.status===200){
           const error=new Error(res.error);
           throw error;
