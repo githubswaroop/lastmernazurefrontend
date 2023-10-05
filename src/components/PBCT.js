@@ -111,7 +111,7 @@ function PBCT() {
         }
         const incorrect = (30 - (unattemted + score));
         const ctype = "PBC";
-        console.log(unattemted);
+        //console.log(unattemted);
         newscore(score);
         const check = "PBC";
 
@@ -161,13 +161,13 @@ function PBCT() {
                 }
                 const incorrect = (30 - (unattemted + score));
                 const ctype = "PBC";
-                console.log(unattemted);
+                //console.log(unattemted);
                 newscore(score);
                 const check = "PBC";
 
                 axios.post(`${host}/api/scoring`, { score, incorrect, ctype, check })
                     .then((res) => {
-                        console.log("patanahi yaar" + res);
+                        //console.log("patanahi yaar" + res);
                     }).catch(err => console.log("kuch karna padega" + err))
 
 
