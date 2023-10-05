@@ -43,7 +43,7 @@ function Topscorer() {
       const newArray = Array.from({ length: documents.length }, (_, index) => index + 1);
       setDocumentArray(newArray);
       
-      console.log(documentArray);
+      //console.log(documentArray);
       
      
     
@@ -54,7 +54,7 @@ function Topscorer() {
       }
       
     }catch(err){
-         console.log(err);
+         //console.log(err);
         
     }
   }
