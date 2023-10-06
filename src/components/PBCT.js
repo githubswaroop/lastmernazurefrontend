@@ -150,7 +150,7 @@ function PBCT() {
             setistoggled(false);
             const id = 5;
             //redirect to Analytics
-            navigate('/Analytics');
+            navigate('/');
         }
     };
 
@@ -198,7 +198,7 @@ function PBCT() {
                     setistoggled(false);
                     const id = 5;
                     //redirect to Analytics
-                    navigate('/Analytics');
+                    navigate('/');
                 }
 
             }
