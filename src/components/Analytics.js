@@ -42,6 +42,8 @@ function Analytics(props) {
     const [questions, setquestions] = useState(SBCQ());
     const [loading, setloading] = useState(false);
     const [newresult, result] = useState("wait");
+    const [count, setCount] = useState(0);
+    const [sc, newsc] = useState(0);
     const [userdata, setuserdata] = useState("");
     const Analyticspage = async () => {
         try {
@@ -56,12 +58,19 @@ function Analytics(props) {
             })
 
             const data = await res.json();
-            setloading(true);
+            
+            useEffect(() => {
+    if (count < 2) {
+        newsc(data.score);
+         setloading(true);
             setuserdata(data);
             score(data.score);
             incorrect(data.incorrect);
             unattemted(30 - (data.score + data.incorrect));
-            if (data.score == -1) {
+      setCount(count + 1);
+    }
+  }, [count]);
+            if (sc == -1) {
                 navigate("/Backtohome");
             }
 
