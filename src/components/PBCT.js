@@ -76,7 +76,8 @@ function PBCT() {
               setistoggled(true);
             })
             .catch((error) => {
-                alert("Something Went wrong please close the tab and again start the test");
+                alert("Something Went wrong click on start test again");
+                navigate('/Home');
               console.error('Error entering full-screen:', error);
             });
         }
