@@ -76,6 +76,7 @@ function PBCT() {
               setistoggled(true);
             })
             .catch((error) => {
+                alert("Something Went wrong please close the tab and again start the test");
               console.error('Error entering full-screen:', error);
             });
         }
