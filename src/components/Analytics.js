@@ -71,7 +71,7 @@ function Analytics(props) {
             }
 
         } catch (err) {
-            //console.log(err);
+        //  console.log(err);
             
             navigate("/Login");
             

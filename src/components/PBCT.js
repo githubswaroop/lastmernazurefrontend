@@ -67,24 +67,7 @@ function PBCT() {
     //for full screen
     const [isFullScreen, setIsFullScreen] = useState(false);
     //disable back button funtionlity
-    // useEffect(() => {
-    //     if (document.documentElement.requestFullscreen) {
-    //         document.documentElement.requestFullscreen();
-    //         setIsFullScreen(true);
-    //         setistoggled(true);
-    //     }
-    //     const backbt = () => {
-    //         window.history.pushState(null, null, window.location.href);
-    //         window.onpopstate = () => {
-    //             window.history.pushState(null, null, window.location.href);
-    //         };
-    //     };
-
-    //     backbt();
-    //     return () => {
-    //         window.onpopstate = null;
-    //     };
-    // }, []);
+    
      const enterFullScreen = () => {
         if (document.documentElement.requestFullscreen) {
           document.documentElement.requestFullscreen()
@@ -148,8 +131,10 @@ function PBCT() {
             }
         })
             .then((res) => {
-                console.log("patanahi yaar" + res);
-            }).catch(err => console.log("kuch karna padega" + err))
+                // console.log("patanahi yaar" + res);
+            }).catch(
+                // err => console.log("kuch karna padega" + err)
+                )
 
 
         //code for timer
@@ -195,7 +180,9 @@ function PBCT() {
                 axios.post(`${host}/api/scoring`, { score, incorrect, ctype, check })
                     .then((res) => {
                         //console.log("patanahi yaar" + res);
-                    }).catch(err => console.log("kuch karna padega" + err))
+                    }).catch(
+                        // err => console.log("kuch karna padega" + err)
+                        )
 
 
                 //code for timer
