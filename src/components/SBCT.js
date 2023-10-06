@@ -147,7 +147,7 @@ function SBCT() {
             setistoggled(false);
             const id = 5;
             //redirect to Analytics
-            navigate('/Analytics');
+            navigate('/');
         }
     };
 
@@ -195,7 +195,7 @@ function SBCT() {
             setistoggled(false);
             const id = 5;
             //redirect to Analytics
-            navigate('/Analytics');
+            navigate('/');
         }
             }
         };
