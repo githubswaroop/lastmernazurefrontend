@@ -77,7 +77,7 @@ function PBCT() {
             })
             .catch((error) => {
                 alert("Something Went wrong click on start test again");
-                navigate('/Home');
+                navigate('/');
               console.error('Error entering full-screen:', error);
             });
         }
