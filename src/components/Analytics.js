@@ -82,7 +82,7 @@ function Analytics(props) {
         }
     }
     useEffect(() => {
-      if (count < 2) {
+      if (count < 15) {
             Analyticspage();
           newsc(data.score);
         
