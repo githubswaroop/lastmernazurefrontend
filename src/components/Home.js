@@ -118,7 +118,7 @@ function Home() {
           <div style={{ display: 'flex-box' }}>
             <h1 className='fonth1' style={{ color: "white" }}>Welcome to Website<br></br> Prepare with confidence</h1>
 
-            <h5 className='fonth1' style={{ color: "rgba(255, 255, 255, 0.526)" }}>Apptitude practice exam to prepare <br></br>you for your placements</h5>
+            <h5 className='fonth1' style={{ color: "rgba(255, 255, 255, 0.526)" }}>Aptitude practice exam to prepare <br></br>you for your placements</h5>
             <br></br>
             <button type='button' className='homebtn' onClick={()=>gototest()}>Test your Knowledge</button>
           </div>
