@@ -58,15 +58,16 @@ function Analytics(props) {
             })
 
             const data = await res.json();
-            
-            useEffect(() => {
-    if (count < 2) {
-        newsc(data.score);
-         setloading(true);
+             setloading(true);
             setuserdata(data);
             score(data.score);
             incorrect(data.incorrect);
             unattemted(30 - (data.score + data.incorrect));
+            
+            useEffect(() => {
+    if (count < 2) {
+        newsc(data.score);
+        
       setCount(count + 1);
     }
   }, [count]);
