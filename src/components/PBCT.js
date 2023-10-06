@@ -283,7 +283,7 @@ function PBCT() {
                 <div style={{ height: isFullScreen ? '100vh' : 'auto' }}>
                     <div className='servicetitle'>
                         <h1>
-                            The Service based Company Questions
+                            The Product based Company Questions
                             <div className='timer'>
                                 {minutes < 10 ? '0' + minutes : minutes}:{seconds < 10 ? '0' + seconds : seconds}
 
