@@ -64,13 +64,7 @@ function Analytics(props) {
             incorrect(data.incorrect);
             unattemted(30 - (data.score + data.incorrect));
             
-  //           useEffect(() => {
-  //   if (count < 2) {
-  //       newsc(data.score);
-        
-  //     setCount(count + 1);
-  //   }
-  // }, [count]);
+
             if (data.score== -1) {
                 navigate("/Backtohome");
             }
@@ -88,9 +82,14 @@ function Analytics(props) {
         }
     }
     useEffect(() => {
-        Analyticspage();
+      if (count < 2) {
+            Analyticspage();
+          newsc(data.score);
+        
+          setCount(count + 1);
+    }
 
-    },)
+    },[count])
 
 
 
