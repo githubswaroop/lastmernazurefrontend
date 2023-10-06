@@ -192,7 +192,7 @@ function Home() {
 
         <hr></hr>
         <div>
-          <h3 style={{marginLeft:'15vw'}}>Check your Apptitude Knowledge </h3>
+          <h3 style={{marginLeft:'15vw'}}>Check your Aptitude Knowledge </h3>
         </div>
 
         <div ref={ref}>
@@ -201,7 +201,7 @@ function Home() {
               <div className="card cardbg" >
                 <div className="card-body">
                   <h5 className="card-title">Service Based Companies</h5>
-                  <p className="card-text">Apptitude questions asked in service based companies<br>
+                  <p className="card-text">Aptitude questions asked in service based companies<br>
                   </br>
                   No. of Questions:30<br>
                   </br>
@@ -222,7 +222,7 @@ function Home() {
               <div className="card cardbg" >
                 <div className="card-body">
                   <h5 className="card-title">Product Based Companies</h5>
-                  <p className="card-text">Apptitude questions asked in product based companies<br>
+                  <p className="card-text">Aptitude questions asked in product based companies<br>
                   </br>
                   No. of Questions:30<br>
                   </br>
