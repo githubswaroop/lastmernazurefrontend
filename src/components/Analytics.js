@@ -42,8 +42,7 @@ function Analytics(props) {
     const [questions, setquestions] = useState(SBCQ());
     const [loading, setloading] = useState(false);
     const [newresult, result] = useState("wait");
-    const [count, setCount] = useState(0);
-    const [sc, newsc] = useState(0);
+   
     const [userdata, setuserdata] = useState("");
     const Analyticspage = async () => {
         try {
@@ -82,14 +81,13 @@ function Analytics(props) {
         }
     }
     useEffect(() => {
-      if (count < 15) {
+      
             Analyticspage();
-          newsc(data.score);
+      
         
-          setCount(count + 1);
-    }
+          
 
-    },[count])
+    },[])
 
 
 
