@@ -4,8 +4,8 @@ function SBCQ() {
         {
           id:1,
           question: "A train 120 meters long is running with a speed of 60 km/hr. In what time will it pass a boy who is running at 6 km/hr in the direction opposite to that in which the train is going?",
-          options: ['20m/s', '30m/s', '60m/s', '40m/s'],
-          correctIndex: 0,
+          options: ['5m/s', '9m/s', '8m/s', '4m/s'],
+          correctIndex: 2,
           ref: useRef(null),
         },
         {
