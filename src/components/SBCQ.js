@@ -10,7 +10,7 @@ function SBCQ() {
         },
         {
           id:2,
-          question: "Two friends shayam and Kailash own two versions of a car. Shayam owns the diesel version of the car, while kailash owns the petrol version. Kailash's car gives an average that is 20% higher than Shayam's (in terms of litres per kilometre). It is known that petrol costs 60% of its price higher than diesel.",
+          question: "Two friends shayam and Kailash own two versions of a car. Shayam owns the diesel version of the car, while kailash owns the petrol version. Kailash's car gives an average that is 20% higher than Shayam's (in terms of litres per kilometre). It is known that petrol costs 60% of its price higher than diesel.The ratio of the cost per kilometer of kailash's car to shayam's car is ?",
           options: ['3:1', '1:3', '1:2', '2:1'],
           correctIndex: 0,
           ref: useRef(null),
