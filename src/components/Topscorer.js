@@ -26,7 +26,7 @@ function Topscorer() {
       setloading(true);
       if(documents){
       
-        const email = documents.map((document) => (document.firstname+document.lastname) );
+        const email = documents.map((document) => (document.firstname+" "+document.lastname) );
         const score = documents.map((document) => (document.score) );
         const companytype = documents.map((document) => (document.ctype) );
         
