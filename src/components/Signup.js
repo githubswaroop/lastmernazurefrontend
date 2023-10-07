@@ -24,7 +24,7 @@ const host="https://lastmernazurebackend.vercel.app";
     const {firstname,lastname,email,password}=user;
      
 
-     const emailvalid=/^[a-z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i;
+     const emailvalid=/^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$/i;
    
      if(!emailvalid.test(email)){
            alert("Invalid Credentials");
