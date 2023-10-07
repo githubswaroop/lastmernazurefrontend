@@ -26,7 +26,7 @@ function SBCQ() {
           id:4,
           question: "Arjun, Ankit, and Anil can complete a task in 40 days, 50 days, and 64 days respectively. Amar is twice as efficient as Arjun. All of them worked together for five days. Then, Arjun and Anil worked together for a few days alone completed the task. If Amar was paid Rs. 1920 for his work, how much was Anil paid for his work?",
           options: ['3840', '960', '1920', '640'],
-          correctIndex: 0,
+          correctIndex: 2,
           ref: useRef(null),
         },
         {
