@@ -40,7 +40,7 @@ function SBCQ() {
           id:6,
           question: "The average price of 16 pens is Rs. 64 while the average price of 14 of these pens is Rs. 44. Of the remaining two pens, if the price of one pen is 40% more than the other, what is the price of each of these two pens?",
           options: ['250,238', '170,238', '160,238', '170,248'],
-          correctIndex: 0,
+          correctIndex: 1,
           ref: useRef(null),
         },
         {
